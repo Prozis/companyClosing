@@ -1,0 +1,78 @@
+$accentColor: #ffc222
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+body
+  font-family: 'PT Serif', serif
+  font-size: 14pt
+a
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+  text-decoration: none
+  display: inline-block
+h1
+  padding: 0
+  margin: 0
+  font-size: 30px
+  text-transform: uppercase
+.accent_text
+  color: $accentColor
+
+.container
+  max-width: 1170px
+  padding: 0px 15px
+  margin: 0 auto
+.header-top
+  background-color: #303030
+  line-height: 45px
+  a
+    padding: 10px 20px
+    color: white
+    position: relative
+  a::before
+    font-family: 'icomoon'
+    color: $accentColor
+    position: absolute
+    left: 0
+  #phone:before
+    content: "\f095"
+
+  #email:before
+    content: "\f003"
+
+  #consult:before
+    content: "\f0b1"
+    color: black
+    left: 10px
+#consult
+  font-size: 16px
+  background-color: $accentColor
+  float: right
+  color: black
+  padding-left: 30px
+.header-bottom
+  padding: 30px 0
+  h1
+    display: inline-block
+    width: 30%
+    margin-top: 8px
+
+nav
+  float: right
+  a
+    display: inline-block
+    border: 1px solid transparent
+    transition: 0.6s
+    padding: 12px 20px
+    font-size: 16px
+    color: black
+  a:hover
+    border: 1px solid $accentColor
+.slider
+  background-image: url('../img/slider.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  min-height: 497px
+  color: white
