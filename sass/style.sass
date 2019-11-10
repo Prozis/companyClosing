@@ -1,11 +1,12 @@
 $accentColor: #ffc222
+$mainTextColor: #d3d2d2
 *
   padding: 0
   margin: 0
   box-sizing: border-box
 body
   font-family: 'PT Serif', serif
-  font-size: 14pt
+  font-size: 18px
 a
   font-family: 'Roboto', sans-serif
   font-size: 14px
@@ -57,6 +58,7 @@ h1
     display: inline-block
     width: 30%
     margin-top: 8px
+    text-transform: uppercase
 
 nav
   float: right
@@ -70,9 +72,36 @@ nav
   a:hover
     border: 1px solid $accentColor
 .slider
+  text-align: center
   background-image: url('../img/slider.jpg')
   background-repeat: no-repeat
   background-size: cover
   background-position: center
   min-height: 497px
   color: white
+  padding-top: 100px
+.slider_text
+  line-height: 24px
+  color: $mainTextColor
+  margin-top: 30px
+  margin: 20px auto 50px auto
+  //margin-bottom: 50px
+  max-width: 700px
+
+.default_btn
+  line-height: 24px
+  font-weight: 500
+  font-size: 18px
+  color: white
+  display: inline-block
+  border: 1px solid $accentColor
+  padding: 8px 30px 8px 24px
+  position: relative
+  border-right-width: 20px
+.default_btn::after
+  content: "\f105"
+  font-family: 'icomoon'
+  position: absolute
+  right: -13px
+  top: 50%
+  transform: translateY(-50%)
