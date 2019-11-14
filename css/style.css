@@ -1,15 +1,15 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 18px; }
 
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   text-decoration: none;
   display: inline-block; }
@@ -20,6 +20,9 @@ h1 {
   font-size: 30px;
   text-transform: uppercase; }
 
+h3 {
+  padding: 30px 0; }
+
 .accent_text {
   color: #ffc222; }
 
@@ -27,6 +30,9 @@ h1 {
   max-width: 1170px;
   padding: 0px 15px;
   margin: 0 auto; }
+
+section {
+  padding: 65px 0px; }
 
 .header-top {
   background-color: #303030;
@@ -36,16 +42,16 @@ h1 {
     color: white;
     position: relative; }
   .header-top a::before {
-    font-family: 'icomoon';
+    font-family: "icomoon";
     color: #ffc222;
     position: absolute;
     left: 0; }
   .header-top #phone:before {
-    content: "\f095"; }
+    content: ""; }
   .header-top #email:before {
-    content: "\f003"; }
+    content: ""; }
   .header-top #consult:before {
-    content: "\f0b1";
+    content: "";
     color: black;
     left: 10px; }
 
@@ -69,8 +75,6 @@ nav {
   nav a {
     display: inline-block;
     border: 1px solid transparent;
-    -webkit-transition: 0.6s;
-    -o-transition: 0.6s;
     transition: 0.6s;
     padding: 12px 20px;
     font-size: 16px;
@@ -107,11 +111,59 @@ nav {
   border-right-width: 20px; }
 
 .default_btn::after {
-  content: "\f105";
-  font-family: 'icomoon';
+  content: "";
+  font-family: "icomoon";
   position: absolute;
   right: -13px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
+.white {
+  background-color: white;
+  color: #5E5E5E; }
+
+.services-text {
+  display: grid;
+  grid-template-columns: 1fr 5fr 4fr; }
+
+.yellow-line {
+  background-color: #ffc222;
+  height: 2px;
+  margin-top: 15px; }
+
+.serv-btn {
+  text-align: right; }
+
+.serv-btn a {
+  color: #5E5E5E;
+  border: 1px solid #5E5E5E;
+  font-size: 18px;
+  padding: 15px 40px;
+  transition: 0.5s; }
+
+.serv-btn a:hover {
+  border: 1px solid #ffc222; }
+
+.serv-text {
+  padding: 0px 30px; }
+
+.services-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  padding: 60px 0 30px 0; }
+
+.shadow-block {
+  background-color: #F9F9F9;
+  box-shadow: 0 0 30px -20px;
+  text-align: center;
+  padding: 30px; }
+  .shadow-block a {
+    color: black; }
+
+.block-2btn {
+  padding: 65px 30px 40px 30px; }
+  .block-2btn a .default_btn {
+    margin-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */

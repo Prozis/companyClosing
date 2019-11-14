@@ -1,5 +1,6 @@
 $accentColor: #ffc222
 $mainTextColor: #d3d2d2
+$subTextColor: #5E5E5E
 *
   padding: 0
   margin: 0
@@ -17,6 +18,8 @@ h1
   margin: 0
   font-size: 30px
   text-transform: uppercase
+h3
+  padding: 30px 0
 .accent_text
   color: $accentColor
 
@@ -24,6 +27,8 @@ h1
   max-width: 1170px
   padding: 0px 15px
   margin: 0 auto
+section
+  padding: 65px 0px
 .header-top
   background-color: #303030
   line-height: 45px
@@ -105,3 +110,41 @@ nav
   right: -13px
   top: 50%
   transform: translateY(-50%)
+.white
+  background-color: white
+  color: $subTextColor
+.services-text
+  display: grid
+  grid-template-columns: 1fr 5fr 4fr
+.yellow-line
+  background-color: $accentColor
+  height: 2px
+  margin-top: 15px
+.serv-btn
+  text-align: right
+.serv-btn a
+  color: $subTextColor
+  border: 1px solid $subTextColor
+  font-size: 18px
+  padding: 15px 40px
+  transition: 0.5s
+.serv-btn a:hover
+  border: 1px solid $accentColor
+.serv-text
+  padding: 0px 30px
+.services-block
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: 2em
+  padding: 60px 0 30px 0
+.shadow-block
+  background-color: #F9F9F9
+  box-shadow: 0 0 30px -20px
+  text-align: center
+  padding: 30px
+  a
+    color: black
+.block-2btn
+  padding: 65px 30px 40px 30px
+  a .default_btn
+    margin-left: 10px
