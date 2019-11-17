@@ -20,6 +20,8 @@ h1
   text-transform: uppercase
 h3
   padding: 30px 0
+h1, h2, h3
+  color: black
 .accent_text
   color: $accentColor
 
@@ -124,7 +126,7 @@ nav
   text-align: right
 .serv-btn a
   color: $subTextColor
-  border: 1px solid $subTextColor
+  border: 1px solid #e6e6e6
   font-size: 18px
   padding: 15px 40px
   transition: 0.5s
@@ -132,6 +134,7 @@ nav
   border: 1px solid $accentColor
 .serv-text
   padding: 0px 30px
+  letter-spacing: 0.1px
 .services-block
   display: grid
   grid-template-columns: 1fr 1fr 1fr
@@ -139,12 +142,28 @@ nav
   padding: 60px 0 30px 0
 .shadow-block
   background-color: #F9F9F9
-  box-shadow: 0 0 30px -20px
+  //box-shadow: 0 0 30px -20px сначала написал сам
+  // оказалось можно скопировать из PS
+  box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14)
+
   text-align: center
-  padding: 30px
+  padding: 0 30px 120px 30px
+  min-height: 380px
+  position: relative
   a
     color: black
+    text-decoration: underline
+    margin-top: 20px
+  a::after
+    color: white
 .block-2btn
-  padding: 65px 30px 40px 30px
-  a .default_btn
-    margin-left: 10px
+  //  padding: 65px 30px 40px 30px
+  position: absolute
+  bottom: 40px
+  left: 0
+  right: 0
+  a.default_btn
+    margin-left: 50px
+    text-decoration: none
+.block-text
+  margin-bottom: 20px
