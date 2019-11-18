@@ -23,8 +23,11 @@ h1 {
 h3 {
   padding: 30px 0; }
 
-h1, h2, h3 {
+h2, h3 {
   color: black; }
+
+#logo-header {
+  color: #5E5E5E; }
 
 .accent_text {
   color: #ffc222; }
@@ -33,9 +36,6 @@ h1, h2, h3 {
   max-width: 1170px;
   padding: 0px 15px;
   margin: 0 auto; }
-
-section {
-  padding: 65px 0px; }
 
 .header-top {
   background-color: #303030;
@@ -129,6 +129,9 @@ nav {
   background-color: white;
   color: #5E5E5E; }
 
+.services {
+  padding-top: 60px; }
+
 .services-text {
   display: -ms-grid;
   display: grid;
@@ -158,6 +161,8 @@ nav {
 .serv-text {
   padding: 0px 30px;
   letter-spacing: 0.1px; }
+  .serv-text h2 {
+    margin-bottom: 20px; }
 
 .services-block {
   display: -ms-grid;
@@ -193,3 +198,58 @@ nav {
 
 .block-text {
   margin-bottom: 20px; }
+
+.about {
+  background-image: url("../img/about-bg.png");
+  min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0; }
+  .about a::after {
+    color: black; }
+  .about .container {
+    text-align: left; }
+
+.about-top {
+  color: #d3d2d2;
+  max-width: 540px;
+  margin-bottom: 30px; }
+  .about-top h2 {
+    color: #d3d2d2;
+    margin-bottom: 30px; }
+
+.consult-top {
+  margin: 30px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 9fr;
+  grid-template-columns: 1fr 9fr; }
+
+.consult-text {
+  padding: 0px 30px;
+  letter-spacing: 0.1px;
+  max-width: 580px; }
+  .consult-text h2 {
+    margin-bottom: 20px; }
+
+.consult .container {
+  background-image: url("../img/girl.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  min-height: 520px;
+  position: relative; }
+
+.girl {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+#form1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 3fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-column-gap: 30px; }
