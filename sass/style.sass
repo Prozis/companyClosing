@@ -214,5 +214,34 @@ nav
 #form1
   display: grid
   grid-template-columns: 1fr 2fr 1fr
-  grid-template-rows: 3fr 1fr
+  //grid-template-rows: 3fr 1fr
   grid-column-gap: 30px
+form label,
+form input,
+form textarea,
+form select
+  display: block
+  width: 100%
+  font-family: 'Roboto', sans-serif
+  outline: none
+form label
+  line-height: 30px
+  padding-top: 9px
+form input,
+form select
+  height: 40px
+input, textarea, select
+  padding: 5px 10px
+  border: 1px solid $mainTextColor
+//
+
+form textarea
+  height: 200px
+  resize: none
+.f4
+  text-align: right
+  padding-top: 40px
+.f4 button
+  color: $subTextColor
+  background-color: white
+  font-family: 'Roboto', sans-serif
