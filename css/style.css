@@ -159,6 +159,7 @@ nav {
   border: 1px solid #ffc222; }
 
 .serv-text {
+  font-family: 'Roboto', sans-serif;
   padding: 0px 30px;
   letter-spacing: 0.1px; }
   .serv-text h2 {
@@ -213,6 +214,7 @@ nav {
 
 .about-top {
   color: #d3d2d2;
+  font-family: 'Roboto', sans-serif;
   max-width: 540px;
   margin-bottom: 30px; }
   .about-top h2 {
@@ -227,6 +229,7 @@ nav {
   grid-template-columns: 1fr 9fr; }
 
 .consult-text {
+  font-family: 'Roboto', sans-serif;
   padding: 0px 30px;
   letter-spacing: 0.1px;
   max-width: 580px; }
