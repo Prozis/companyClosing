@@ -245,3 +245,38 @@ form textarea
   color: $subTextColor
   background-color: white
   font-family: 'Roboto', sans-serif
+
+.advantage
+  background-color: grey
+  background-image: url()
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+.adv-inner
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: 30px
+  font-family: 'Roboto', sans-serif
+.inner
+  padding: 30px 30px
+  text-align: center
+.squad
+  width: 140px
+  height: 140px
+  border: 1px solid $accentColor
+  margin: auto
+  position: relative
+  //text-align: center
+
+.squad::after
+  display: block
+  font-family: 'icomoon' !important
+  content: "\f00c"
+  //padding-top: 8px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateY(-50%)
+
+  transform: translateX(-50%)
+  //transform: translateX(-50%)
