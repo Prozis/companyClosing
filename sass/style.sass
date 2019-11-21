@@ -48,24 +48,24 @@ h2, h3
     color: $accentColor
     position: absolute
     left: 0
-  #phone:before
+  .phone:before
     content: "\f095"
 
-  #email:before
+  .email:before
     content: "\f003"
-  #adres:before
+  .adres:before
     content: "\f041"
 
-  #consult:before
+  .consultation:before
     content: "\f0b1"
     color: black
     left: 15px
-#consult
-  font-size: 16px
-  background-color: $accentColor
-  float: right
-  color: black
-  padding-left: 40px
+  .consultation
+    font-size: 16px
+    background-color: $accentColor
+    float: right
+    color: black
+    padding-left: 40px
 .header-bottom
   padding: 30px 0
   h1
@@ -94,6 +94,11 @@ nav
   min-height: 497px
   color: white
   padding-top: 100px
+.slider_title
+  h2
+    font-size: 30px
+    text-transform: uppercase
+    color: white
 .slider_text
   line-height: 24px
   color: $mainTextColor
@@ -312,6 +317,8 @@ form textarea
   padding: 35px 30px 30px 70px
   min-height: 345px
   position: relative
+  p
+    margin-bottom: 10px
 .top-aw
   position: absolute
   left: 70px
@@ -353,7 +360,7 @@ form textarea
     padding-top: 0
   a
     display: inline-block
-  #consult
+  .consultation
 
     float: none
     //min-width: 260px

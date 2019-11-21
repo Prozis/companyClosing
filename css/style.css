@@ -57,21 +57,21 @@ h2, h3 {
   position: absolute;
   left: 0; }
 
-.header-top #phone:before, .left-block #phone:before {
+.header-top .phone:before, .left-block .phone:before {
   content: "\f095"; }
 
-.header-top #email:before, .left-block #email:before {
+.header-top .email:before, .left-block .email:before {
   content: "\f003"; }
 
-.header-top #adres:before, .left-block #adres:before {
+.header-top .adres:before, .left-block .adres:before {
   content: "\f041"; }
 
-.header-top #consult:before, .left-block #consult:before {
+.header-top .consultation:before, .left-block .consultation:before {
   content: "\f0b1";
   color: black;
   left: 15px; }
 
-#consult {
+.header-top .consultation, .left-block .consultation {
   font-size: 16px;
   background-color: #ffc222;
   float: right;
@@ -109,6 +109,11 @@ nav {
   min-height: 497px;
   color: white;
   padding-top: 100px; }
+
+.slider_title h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white; }
 
 .slider_text {
   line-height: 24px;
@@ -371,6 +376,8 @@ form textarea {
   padding: 35px 30px 30px 70px;
   min-height: 345px;
   position: relative; }
+  .news-shadow-block p {
+    margin-bottom: 10px; }
 
 .top-aw {
   position: absolute;
@@ -420,7 +427,7 @@ form textarea {
     padding-top: 0; }
   .left-block a {
     display: inline-block; }
-  .left-block #consult {
+  .left-block .consultation {
     float: none;
     margin-top: 50px;
     margin-bottom: 20px; }
