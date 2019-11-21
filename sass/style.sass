@@ -7,7 +7,7 @@ $subTextColor: #5E5E5E
   box-sizing: border-box
 body
   font-family: 'PT Serif', serif
-  font-size: 18px
+  font-size: 14px
 a
   font-family: 'Roboto', sans-serif
   font-size: 14px
@@ -20,6 +20,11 @@ h1
   text-transform: uppercase
 h3
   padding: 30px 0
+  font-size: 18px
+h4
+  font-size: 16px
+  padding: 20px 0
+
 h2, h3
   color: black
 #logo-header
@@ -33,6 +38,7 @@ h2, h3
 .header-top
   background-color: #303030
   line-height: 45px
+.header-top, .left-block
   a
     padding: 10px 20px
     color: white
@@ -47,17 +53,19 @@ h2, h3
 
   #email:before
     content: "\f003"
+  #adres:before
+    content: "\f041"
 
   #consult:before
     content: "\f0b1"
     color: black
-    left: 10px
+    left: 15px
 #consult
   font-size: 16px
   background-color: $accentColor
   float: right
   color: black
-  padding-left: 30px
+  padding-left: 40px
 .header-bottom
   padding: 30px 0
   h1
@@ -97,7 +105,7 @@ nav
 .default_btn
   line-height: 24px
   font-weight: 500
-  font-size: 18px
+  font-size: 14px
   color: white
   display: inline-block
   border: 1px solid $accentColor
@@ -248,7 +256,8 @@ form textarea
 
 .advantage
   background-color: grey
-  background-image: url()
+  background-image: url('../img/adv-bg.jpg')
+  min-height: 287px
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -260,9 +269,15 @@ form textarea
 .inner
   padding: 30px 30px
   text-align: center
+  color: $mainTextColor
+
+  h3
+    color: white
+    font-weight: normal
+
 .squad
-  width: 140px
-  height: 140px
+  width: 35px
+  height: 35px
   border: 1px solid $accentColor
   margin: auto
   position: relative
@@ -272,11 +287,83 @@ form textarea
   display: block
   font-family: 'icomoon' !important
   content: "\f00c"
-  //padding-top: 8px
+  color: white
   position: absolute
   top: 50%
   left: 50%
-  transform: translateY(-50%)
+  transform: translate(-50%, -50%)
+.news
+  padding-top: 70px
+  padding-bottom: 50px
+  background-color: #f9f9f9
+  a
+    font-size: 14px
+.news-block
+  margin-top: 50px
+  display: grid
+  grid-template-columns: 2fr 1fr 1fr
+  grid-gap: 30px
+.news-inner
+  position: relative
+.news-shadow-block
+  background-color: white
+  box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14)
+  text-align: left
+  padding: 35px 30px 30px 70px
+  min-height: 345px
+  position: relative
+.top-aw
+  position: absolute
+  left: 70px
+  top: 0
+  background-color: $accentColor
+  height: 30px
+  width: 65px
+  text-align: center
+  padding-top: 5px
+.top-aw::after
+  font-family: 'icomoon'
+  content: "\f00c"
+  color: white
+.top-news-date
+  position: absolute
+  left: 15px
+  top: 0
+  background-color: $accentColor
+  height: 57px
+  width: 48px
+  text-align: center
+  padding-top: 30px
+  color: white
+  font-family: 'PT+Serif'
+  font-weight: bold
+.contact .container
+  display: grid
+  grid-template-columns: 1fr 2fr
+  grid-gap: 20px
+  padding: 30px 0
+.contact
+  background-color: #595959
+  min-height: 340px
+  color: $mainTextColor
+.left-block
+  margin-left: 20px
+  h4
+    font-family: 'Roboto'
+    padding-top: 0
+  a
+    display: inline-block
+  #consult
 
-  transform: translateX(-50%)
-  //transform: translateX(-50%)
+    float: none
+    //min-width: 260px
+    margin-top: 50px
+    margin-bottom: 20px
+.map-block
+  text-align: right
+footer
+  font-size: 12px
+  background-color: #303030
+  color: $mainTextColor
+  text-align: center
+  padding: 12px 15px

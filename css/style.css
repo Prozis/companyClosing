@@ -6,7 +6,7 @@
 
 body {
   font-family: 'PT Serif', serif;
-  font-size: 18px; }
+  font-size: 14px; }
 
 a {
   font-family: 'Roboto', sans-serif;
@@ -21,7 +21,12 @@ h1 {
   text-transform: uppercase; }
 
 h3 {
-  padding: 30px 0; }
+  padding: 30px 0;
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px;
+  padding: 20px 0; }
 
 h2, h3 {
   color: black; }
@@ -40,30 +45,38 @@ h2, h3 {
 .header-top {
   background-color: #303030;
   line-height: 45px; }
-  .header-top a {
-    padding: 10px 20px;
-    color: white;
-    position: relative; }
-  .header-top a::before {
-    font-family: 'icomoon';
-    color: #ffc222;
-    position: absolute;
-    left: 0; }
-  .header-top #phone:before {
-    content: "\f095"; }
-  .header-top #email:before {
-    content: "\f003"; }
-  .header-top #consult:before {
-    content: "\f0b1";
-    color: black;
-    left: 10px; }
+
+.header-top a, .left-block a {
+  padding: 10px 20px;
+  color: white;
+  position: relative; }
+
+.header-top a::before, .left-block a::before {
+  font-family: 'icomoon';
+  color: #ffc222;
+  position: absolute;
+  left: 0; }
+
+.header-top #phone:before, .left-block #phone:before {
+  content: "\f095"; }
+
+.header-top #email:before, .left-block #email:before {
+  content: "\f003"; }
+
+.header-top #adres:before, .left-block #adres:before {
+  content: "\f041"; }
+
+.header-top #consult:before, .left-block #consult:before {
+  content: "\f0b1";
+  color: black;
+  left: 15px; }
 
 #consult {
   font-size: 16px;
   background-color: #ffc222;
   float: right;
   color: black;
-  padding-left: 30px; }
+  padding-left: 40px; }
 
 .header-bottom {
   padding: 30px 0; }
@@ -107,7 +120,7 @@ nav {
 .default_btn {
   line-height: 24px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   color: white;
   display: inline-block;
   border: 1px solid #ffc222;
@@ -291,7 +304,8 @@ form textarea {
 
 .advantage {
   background-color: grey;
-  background-image: url();
+  background-image: url("../img/adv-bg.jpg");
+  min-height: 287px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -306,11 +320,15 @@ form textarea {
 
 .inner {
   padding: 30px 30px;
-  text-align: center; }
+  text-align: center;
+  color: #d3d2d2; }
+  .inner h3 {
+    color: white;
+    font-weight: normal; }
 
 .squad {
-  width: 140px;
-  height: 140px;
+  width: 35px;
+  height: 35px;
   border: 1px solid #ffc222;
   margin: auto;
   position: relative; }
@@ -319,12 +337,100 @@ form textarea {
   display: block;
   font-family: 'icomoon' !important;
   content: "\f00c";
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.news {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: #f9f9f9; }
+  .news a {
+    font-size: 14px; }
+
+.news-block {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 30px; }
+
+.news-inner {
+  position: relative; }
+
+.news-shadow-block {
+  background-color: white;
+  -webkit-box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+  box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+  text-align: left;
+  padding: 35px 30px 30px 70px;
+  min-height: 345px;
+  position: relative; }
+
+.top-aw {
+  position: absolute;
+  left: 70px;
+  top: 0;
+  background-color: #ffc222;
+  height: 30px;
+  width: 65px;
+  text-align: center;
+  padding-top: 5px; }
+
+.top-aw::after {
+  font-family: 'icomoon';
+  content: "\f00c";
+  color: white; }
+
+.top-news-date {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  background-color: #ffc222;
+  height: 57px;
+  width: 48px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: 'PT+Serif';
+  font-weight: bold; }
+
+.contact .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  padding: 30px 0; }
+
+.contact {
+  background-color: #595959;
+  min-height: 340px;
+  color: #d3d2d2; }
+
+.left-block {
+  margin-left: 20px; }
+  .left-block h4 {
+    font-family: 'Roboto';
+    padding-top: 0; }
+  .left-block a {
+    display: inline-block; }
+  .left-block #consult {
+    float: none;
+    margin-top: 50px;
+    margin-bottom: 20px; }
+
+.map-block {
+  text-align: right; }
+
+footer {
+  font-size: 12px;
+  background-color: #303030;
+  color: #d3d2d2;
+  text-align: center;
+  padding: 12px 15px; }
